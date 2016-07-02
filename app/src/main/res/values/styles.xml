@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="sgFlatButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@drawable/btn_white_text_selector</item>
+        <item name="android:background">@drawable/button_states</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">64.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="sgDialogButton" parent="@style/sgFlatButton">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:minHeight">36.0dip</item>
+    </style>
+
+</resources>

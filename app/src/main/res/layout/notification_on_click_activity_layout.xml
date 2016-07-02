@@ -1,0 +1,50 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+<!--    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/range"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:text="Today"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/colorPrimary"
+        app:typeface="roboto_medium"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rv_linearLayout">
+        <com.example.souvik.remindertemplate.Adapter.ContextMenuRecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/rv"
+            >
+        </com.example.souvik.remindertemplate.Adapter.ContextMenuRecyclerView >
+
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="gone"
+            android:text="No Data" />
+    </LinearLayout>
+
+</LinearLayout>
